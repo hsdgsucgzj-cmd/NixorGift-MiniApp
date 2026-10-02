@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <meta name="theme-color" content="#0b0d12">
+
+    <title>NixorGift</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="app">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="header-info">
+            <div class="logo">
+                NixorGift
+            </div>
+
+            <div class="subtitle">
+                NFT & Gifts
+            </div>
+        </div>
+
+        <button
+            class="profile-button"
+            onclick="openPage('profile')"
+            type="button"
+        >
+            <span id="headerAvatar">N</span>
+        </button>
+
+    </header>
+
+
+    <!-- CONTENT -->
+    <main id="content">
+
+
+        <!-- HOME -->
+        <section
+            class="page active"
+            id="page-home"
+        >
+
+            <div class="balance-card">
+
+                <div class="balance-title">
+                    Ваш баланс
+                </div>
+
+                <div class="balance-value">
+                    <span id="balance">0</span> ⭐
+                </div>
+
+            </div>
+
+
+            <div class="section-title">
+
+                <h2>
+                    🎁 Кейсы
+                </h2>
+
+            </div>
+
+
+            <div class="cases-grid">
+
+
+                <!-- STARTER CASE -->
+                <div class="case-card">
+
+                    <div class="case-image starter">
+                        🎁
+                    </div>
+
+                    <div class="case-name">
+                        Starter Case
+                    </div>
+
+                    <div class="case-description">
+                        Подарки и NFT
+                    </div>
+
+                    <button
+                        class="primary-button"
+                        type="button"
+                        onclick="openCase('starter')"
+                    >
+                        Открыть
+                    </button>
+
+                </div>
+
+
+                <!-- NFT CASE -->
+                <div class="case-card">
+
+                    <div class="case-image nft">
+                        💎
+                    </div>
+
+                    <div class="case-name">
+                        NFT Case
+                    </div>
+
+                    <div class="case-description">
+                        Коллекционные NFT
+                    </div>
+
+                    <button
+                        class="primary-button"
+                        type="button"
+                        onclick="openCase('nft')"
+                    >
+                        Открыть
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- NFT PREVIEW -->
+            <div class="section-title nft-title">
+
+                <h2>
+                    🎨 NFT
+                </h2>
+
+                <button
+                    class="text-button"
+                    type="button"
+                    onclick="openPage('nft')"
+                >
+                    Все →
+                </button>
+
+            </div>
+
+
+            <div class="nft-preview">
+
+
+                <div class="nft-card">
+
+                    <div class="nft-icon">
+                        ✨
+                    </div>
+
+                    <span>
+                        Party Sparkler
+                    </span>
+
+                </div>
+
+
+                <div class="nft-card">
+
+                    <div class="nft-icon">
+                        🍄
+                    </div>
+
+                    <span>
+                        Spy Agaric
+                    </span>
+
+                </div>
+
+
+                <div class="nft-card">
+
+                    <div class="nft-icon">
+                        🎅
+                    </div>
+
+                    <span>
+                        Santa Hat
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- NFT -->
+        <section
+            class="page"
+            id="page-nft"
+        >
+
+            <div class="page-header">
+
+                <h1>
+                    🎨 NFT
+                </h1>
+
+                <p>
+                    Коллекции NixorGift
+                </p>
+
+            </div>
+
+
+            <div class="nft-grid">
+
+
+                <div class="nft-full-card">
+
+                    <div class="nft-big-icon">
+                        ✨
+                    </div>
+
+                    <h3>
+                        Party Sparkler
+                    </h3>
+
+                    <span>
+                        NFT
+                    </span>
+
+                </div>
+
+
+                <div class="nft-full-card">
+
+                    <div class="nft-big-icon">
+                        🍄
+                    </div>
+
+                    <h3>
+                        Spy Agaric
+                    </h3>
+
+                    <span>
+                        NFT
+                    </span>
+
+                </div>
+
+
+                <div class="nft-full-card">
+
+                    <div class="nft-big-icon">
+                        🎅
+                    </div>
+
+                    <h3>
+                        Santa Hat
+                    </h3>
+
+                    <span>
+                        NFT
+                    </span>
+
+                </div>
+
+
+                <div class="nft-full-card">
+
+                    <div class="nft-big-icon">
+                        🪴
+                    </div>
+
+                    <h3>
+                        Hex Pot
+                    </h3>
+
+                    <span>
+                        NFT
+                    </span>
+
+                </div>
+
+
+                <div class="nft-full-card">
+
+                    <div class="nft-big-icon">
+                        🪆
+                    </div>
+
+                    <h3>
+                        Voodoo Doll
+                    </h3>
+
+                    <span>
+                        NFT
+                    </span>
+
+                </div>
+
+
+                <div class="nft-full-card">
+
+                    <div class="nft-big-icon">
+                        🔮
+                    </div>
+
+                    <h3>
+                        Crystal Ball
+                    </h3>
+
+                    <span>
+                        NFT
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- WINS -->
+        <section
+            class="page"
+            id="page-wins"
+        >
+
+            <div class="page-header">
+
+                <h1>
+                    🎁 Мои выигрыши
+                </h1>
+
+                <p>
+                    Полученные подарки и NFT
+                </p>
+
+            </div>
+
+
+            <div
+                id="winsList"
+                class="empty-state"
+            >
+
+                <div class="empty-icon">
+                    🎁
+                </div>
+
+                <div>
+                    Пока здесь ничего нет
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WITHDRAW -->
+        <section
+            class="page"
+            id="page-withdraw"
+        >
+
+            <div class="page-header">
+
+                <h1>
+                    📤 Вывод
+                </h1>
+
+                <p>
+                    Получение ваших NFT
+                </p>
+
+            </div>
+
+
+            <div class="withdraw-info">
+
+                <div class="withdraw-icon">
+                    📤
+                </div>
+
+                <h3>
+                    Вывод NFT
+                </h3>
+
+                <p>
+                    Здесь появятся ваши NFT,
+                    доступные для вывода.
+                </p>
+
+            </div>
+
+
+            <div
+                id="withdrawList"
+                class="empty-state"
+            >
+
+                <div class="empty-icon">
+                    📦
+                </div>
+
+                <div>
+                    Нет доступных NFT для вывода
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROFILE -->
+        <section
+            class="page"
+            id="page-profile"
+        >
+
+            <div class="page-header">
+
+                <h1>
+                    👤 Профиль
+                </h1>
+
+            </div>
+
+
+            <div class="profile-card">
+
+                <div
+                    class="profile-avatar"
+                    id="profileAvatar"
+                >
+                    N
+                </div>
+
+
+                <div
+                    class="profile-name"
+                    id="profileName"
+                >
+                    Пользователь
+                </div>
+
+
+                <div
+                    class="profile-username"
+                    id="profileUsername"
+                >
+                    @user
+                </div>
+
+
+                <div class="profile-balance">
+
+                    <span>
+                        Баланс
+                    </span>
+
+                    <strong>
+                        <span id="profileBalance">
+                            0
+                        </span>
+                        ⭐
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-menu">
+
+
+                <button
+                    type="button"
+                    onclick="openPage('refs')"
+                >
+
+                    <span>
+                        👥
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Рефералы
+                        </strong>
+
+                        <small>
+                            Приглашайте друзей
+                        </small>
+
+                    </div>
+
+                    <b>
+                        ›
+                    </b>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="openPage('leaderboard')"
+                >
+
+                    <span>
+                        🏆
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Лидерборд
+                        </strong>
+
+                        <small>
+                            Лучшие игроки
+                        </small>
+
+                    </div>
+
+                    <b>
+                        ›
+                    </b>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="openPage('promo')"
+                >
+
+                    <span>
+                        🎟️
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Промокод
+                        </strong>
+
+                        <small>
+                            Активировать код
+                        </small>
+
+                    </div>
+
+                    <b>
+                        ›
+                    </b>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- REFERRALS -->
+        <section
+            class="page"
+            id="page-refs"
+        >
+
+            <div class="page-header">
+
+                <h1>
+                    👥 Рефералы
+                </h1>
+
+                <p>
+                    Приглашайте друзей в NixorGift
+                </p>
+
+            </div>
+
+
+            <div class="ref-card">
+
+                <div class="ref-number">
+                    0
+                </div>
+
+                <div>
+                    приглашённых пользователей
+                </div>
+
+            </div>
+
+
+            <div class="ref-link-card">
+
+                <div class="ref-link-title">
+                    Ваша ссылка
+                </div>
+
+                <div
+                    class="ref-link"
+                    id="refLink"
+                >
+                    Загрузка...
+                </div>
+
+                <button
+                    class="primary-button"
+                    type="button"
+                    onclick="copyReferral()"
+                >
+                    📋 Скопировать
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEADERBOARD -->
+        <section
+            class="page"
+            id="page-leaderboard"
+        >
+
+            <div class="page-header">
+
+                <h1>
+                    🏆 Лидерборд
+                </h1>
+
+                <p>
+                    Топ игроков NixorGift
+                </p>
+
+            </div>
+
+
+            <div id="leaderboardList">
+
+
+                <div class="leader-row">
+
+                    <div class="leader-place">
+                        1
+                    </div>
+
+                    <div class="leader-avatar">
+                        N
+                    </div>
+
+                    <div class="leader-user">
+                        Player
+                    </div>
+
+                    <div class="leader-prize">
+                        Crystal Ball
+                    </div>
+
+                </div>
+
+
+                <div class="leader-row">
+
+                    <div class="leader-place">
+                        2
+                    </div>
+
+                    <div class="leader-avatar">
+                        N
+                    </div>
+
+                    <div class="leader-user">
+                        Player
+                    </div>
+
+                    <div class="leader-prize">
+                        Party Sparkler
+                    </div>
+
+                </div>
+
+
+                <div class="leader-row">
+
+                    <div class="leader-place">
+                        3
+                    </div>
+
+                    <div class="leader-avatar">
+                        N
+                    </div>
+
+                    <div class="leader-user">
+                        Player
+                    </div>
+
+                    <div class="leader-prize">
+                        Voodoo Doll
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- PROMO -->
+        <section
+            class="page"
+            id="page-promo"
+        >
+
+            <div class="page-header">
+
+                <h1>
+                    🎟️ Промокод
+                </h1>
+
+                <p>
+                    Введите промокод для получения награды
+                </p>
+
+            </div>
+
+
+            <div class="form-card">
+
+                <input
+                    id="promoInput"
+                    type="text"
+                    placeholder="Введите промокод"
+                    autocomplete="off"
+                >
+
+
+                <button
+                    class="primary-button"
+                    type="button"
+                    onclick="activatePromo()"
+                >
+                    Активировать
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ADMIN -->
+        <section
+            class="page"
+            id="page-admin"
+        >
+
+            <div class="page-header">
+
+                <h1>
+                    👑 Admin Panel
+                </h1>
+
+                <p>
+                    @loxxsy52
+                </p>
+
+            </div>
+
+
+            <div class="admin-grid">
+
+
+                <button type="button">
+                    📊
+                    <span>
+                        Статистика
+                    </span>
+                </button>
+
+
+                <button type="button">
+                    🎁
+                    <span>
+                        Кейсы
+                    </span>
+                </button>
+
+
+                <button type="button">
+                    🎨
+                    <span>
+                        NFT
+                    </span>
+                </button>
+
+
+                <button type="button">
+                    📤
+                    <span>
+                        Выводы
+                    </span>
+                </button>
+
+
+                <button type="button">
+                    👥
+                    <span>
+                        Пользователи
+                    </span>
+                </button>
+
+
+                <button type="button">
+                    🚫
+                    <span>
+                        Баны
+                    </span>
+                </button>
+
+
+                <button type="button">
+                    🎟️
+                    <span>
+                        Промокоды
+                    </span>
+                </button>
+
+
+                <button type="button">
+                    📢
+                    <span>
+                        Рассылка
+                    </span>
+                </button>
+
+
+                <button type="button">
+                    ⚙️
+                    <span>
+                        Настройки
+                    </span>
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- SENDER -->
+        <section
+            class="page"
+            id="page-sender"
+        >
+
+            <div class="page-header">
+
+                <h1>
+                    📤 Sender
+                </h1>
+
+                <p>
+                    @NixorGiftSender
+                </p>
+
+            </div>
+
+
+            <div
+                id="senderRequests"
+                class="empty-state"
+            >
+
+                <div class="empty-icon">
+                    📦
+                </div>
+
+                <div>
+                    Новых заявок нет
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav">
+
+
+        <button
+            class="nav-item active"
+            data-page="home"
+            type="button"
+            onclick="openPage('home')"
+        >
+
+            <span>
+                🎁
+            </span>
+
+            <small>
+                Игры
+            </small>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            data-page="wins"
+            type="button"
+            onclick="openPage('wins')"
+        >
+
+            <span>
+                🎉
+            </span>
+
+            <small>
+                Выигрыши
+            </small>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            data-page="withdraw"
+            type="button"
+            onclick="openPage('withdraw')"
+        >
+
+            <span>
+                📤
+            </span>
+
+            <small>
+                Вывод
+            </small>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            data-page="profile"
+            type="button"
+            onclick="openPage('profile')"
+        >
+
+            <span>
+                👤
+            </span>
+
+            <small>
+                Профиль
+            </small>
+
+        </button>
+
+
+    </nav>
+
+</div>
+
+
+<!-- TELEGRAM MINI APP -->
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+<!-- NIXORGIFT -->
+<script src="app.js"></script>
+
+</body>
+</html>
